@@ -8,6 +8,7 @@ __Note:__ This project use Django v1.10.2 support python v2.7, v3.4, v3.5 refere
 
  - Docker support
  - Redux support 
+ - CLI 
 
 
 ## How frontend work? 
@@ -75,7 +76,7 @@ npm build:prod
 
 Then deploy to your server!!
 
-__Note:__ If you build success you can deploy your project without run "npm start" anymore just run python to work on server. For test your porject on local as DEBUG = False use: 
+__Note:__ If you build success you can deploy your project without run "npm start" anymore just run python to work on server. For test your project on local as DEBUG = False use: 
 
 ```bash
 ./manage.py runserver --insecure
