@@ -3,6 +3,11 @@
 This project create for Developer who want to use Django as Backend and ReactJs as Frontend
 
 
+## Incoming soon
+
+ - Docker support
+ - Redux support 
+
 
 ## How frontend work? 
 
@@ -12,14 +17,14 @@ In fronend of project using [Babel](https://github.com/babel/babel) and [webpack
 
 ## How Backend work? 
 
-I use Django webpack loader to get ouput of webpack run on django witch use [webpack-bundle-tracker](https://github.com/owais/webpack-bundle-tracker) to generate file see more at [Django webpack loader](https://github.com/owais/django-webpack-loader)
+I use "Django webpack loader" to get ouput of webpack run on django with [webpack-bundle-tracker](https://github.com/owais/webpack-bundle-tracker) to generate file for Django. see more about [Django webpack loader](https://github.com/owais/django-webpack-loader)
 
 
 
 ## What's inside project
 
  - Hot load by [react-hot-loader](https://github.com/gaearon/react-hot-loader)
- - all project need about python lib at requirements.txt 
+ - all python need write at requirements.txt 
  - server.js to run webpack-dev-server using node 
  - webpack config for development and production 
  - simple config for eslint and use rule by airbnb
