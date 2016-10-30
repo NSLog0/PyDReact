@@ -75,7 +75,7 @@ npm build:prod
 
 Then deploy to your server!!
 
-__Note:__ If you build success you can deploy your project without run "npm start" anymore just run python to work on server to test your porject on local as DEBUG = False use: 
+__Note:__ If you build success you can deploy your project without run "npm start" anymore just run python to work on server. For test your porject on local as DEBUG = False use: 
 
 ```bash
 ./manage.py runserver --insecure
