@@ -33,7 +33,6 @@ Icon
 nbproject/private/
 build/
 nbbuild/
-dist/
 nbdist/
 nbactions.xml
 nb-configuration.xml
@@ -62,4 +61,5 @@ bower_components
 *.swp
 
 #webpack
-/bundle
+ bundle/
+ bundles/

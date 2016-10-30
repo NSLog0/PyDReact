@@ -25,20 +25,23 @@ SECRET_KEY = ')_=w35=*gf=m4$pmh8752b19w+&%k)2mxp7hok@kycn(ccm_*b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-WEBPACK_LOADER = {
-    'DEFAULT': {
-        'BUNDLE_DIR_NAME': 'bundles/',
-        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
-    }
-}
-
+# production mode, DEBUG False
 if not DEBUG:
-    WEBPACK_LOADER['DEFAULT'].update({
-        'BUNDLE_DIR_NAME': 'dist/',
-        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats-prod.json')
-    })
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+    WEBPACK_LOADER = {
+        'DEFAULT': {
+            'BUNDLE_DIR_NAME': 'dist/',
+            'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats-prod.json')
+        }
+    }
+else:
+    ALLOWED_HOSTS = []
+    WEBPACK_LOADER = {
+        'DEFAULT': {
+            'BUNDLE_DIR_NAME': 'bundles/',
+            'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json')
+        }
+    }
 
 # Application definition
 INSTALLED_APPS = [
