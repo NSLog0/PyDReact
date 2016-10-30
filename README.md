@@ -82,7 +82,7 @@ __Note:__ If you build success you can deploy your project without run "npm star
 ./manage.py runserver --insecure
 ```
 
-## Project stucture
+## Project structure
 
 View template:
 
