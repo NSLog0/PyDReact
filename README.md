@@ -2,6 +2,7 @@
 
 This project create for Developer who want to use Django as Backend and ReactJs as Frontend
 
+__Note:__ This project use Django v1.10.2 support python v2.7, v3.4, v3.5 reference: [What Python version can I use with Django?](https://docs.djangoproject.com/en/1.10/faq/install/#faq-python-version-support)
 
 ## Incoming soon
 
